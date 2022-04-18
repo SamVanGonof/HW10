@@ -8,4 +8,3 @@ def json_list_loader():
 
 
 result = json_list_loader()
-print(result[0]['name'], result[0]['position'], result[0]['skills'])
