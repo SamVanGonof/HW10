@@ -1,10 +1,6 @@
 import json
 
 
-def json_list_loader():
-    with open('candidates.json', encoding='utf-8') as file:
-        data = json.load(file)
-    return data
-
-
-result = json_list_loader()
+def load_candidates(path):
+    with open(path, 'r', encoding='utf-8') as candidates:
+        return json.load(candidates)
